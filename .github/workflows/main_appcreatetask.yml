@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'appcreatetask'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_49D1D68A0F5349599F9C6546D3DE5D0B }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E6CC6623F7DB44D4AD35E7DBF389D934 }}
           package: .
