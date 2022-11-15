@@ -17,10 +17,12 @@
     <PackageReference Include="Ardalis.ListStartupServices" Version="1.1.4" />
     <PackageReference Include="Ardalis.Specification" Version="6.1.0" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.11.0" />
     <PackageReference Include="MediatR" Version="10.0.1" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
     <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" Condition="'$(Configuration)'=='Release'" PrivateAssets="All" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="6.0.8" />
+    <PackageReference Include="microsoft.azure.ServiceBus" Version="5.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.8" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.8" />
     <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.1.175" />
@@ -83,4 +85,5 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
   </ItemGroup>
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="https://json.schemastore.org/apibuilder.json" /></VisualStudio></ProjectExtensions>
 </Project>

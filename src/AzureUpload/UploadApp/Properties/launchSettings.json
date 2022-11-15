@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "UploadApp": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7063",
+      "launchBrowser": false
+    }
+  }
+}

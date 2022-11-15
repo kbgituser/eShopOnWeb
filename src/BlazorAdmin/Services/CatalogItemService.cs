@@ -59,7 +59,7 @@ public class CatalogItemService : ICatalogItemService
     public async Task<List<CatalogItem>> ListPaged(int pageSize)
     {
         _logger.LogInformation("Fetching catalog items from API.");
-
+        //throw new System.Exception("Cannot move further");
         var brandListTask = _brandService.List();
         var typeListTask = _typeService.List();
         var itemListTask = _httpService.HttpGet<PagedCatalogItemResponse>($"catalog-items?PageSize=10");

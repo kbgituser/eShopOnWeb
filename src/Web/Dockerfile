@@ -6,11 +6,11 @@
 # docker build --pull -t web -f src/Web/Dockerfile .
 #
 # RUN COMMAND
-#  docker run --name eshopweb --rm -it -p 5106:5106 web
+# docker run --name eshopweb --rm -it -p 5106:5106 web
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /app
 
-COPY *.sln .
+COPY *.sln
 COPY . .
 WORKDIR /app/src/Web
 RUN dotnet restore

@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "ServiceBusReceiver2": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7107",
+      "launchBrowser": false
+    }
+  }
+}

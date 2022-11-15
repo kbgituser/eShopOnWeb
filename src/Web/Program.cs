@@ -82,7 +82,8 @@ var baseUrlConfig = configSection.Get<BaseUrlConfiguration>();
 // Blazor Admin Required Services for Prerendering
 builder.Services.AddScoped<HttpClient>(s => new HttpClient
 {
-    BaseAddress = new Uri(baseUrlConfig.WebBase)
+    //BaseAddress = new Uri(baseUrlConfig.WebBase)
+    BaseAddress = new Uri(baseUrlConfig.ApiBase)
 });
 
 // add blazor services

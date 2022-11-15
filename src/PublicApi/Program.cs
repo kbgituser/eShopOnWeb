@@ -79,6 +79,7 @@ builder.Services.AddCors(options =>
                           corsPolicyBuilder.WithOrigins(baseUrlConfig.WebBase.Replace("host.docker.internal", "localhost").TrimEnd('/'));
                           corsPolicyBuilder.AllowAnyMethod();
                           corsPolicyBuilder.AllowAnyHeader();
+                          corsPolicyBuilder.AllowAnyOrigin();
                       });
 });
 
@@ -123,6 +124,7 @@ builder.Services.AddSwaggerGen(c =>
                     }
             });
 });
+builder.Services.AddApplicationInsightsTelemetry(builder.Configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"]);
 
 var app = builder.Build();
 
